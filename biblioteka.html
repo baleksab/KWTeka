@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KWTeka - Biblioteka</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <button class="item" onclick="location.href='index.html';">KWTeka</button>
+        <button disabled="disabled" class="item" onclick="location.href='biblioteka.html';">Biblioteka</button>
+        <button class="item" onclick="location.href='galerija.html';">Galerija</button>
+        <button class="item" onclick="location.href='kontakt.html';">Kontakt</button>
+    </div>
+
+    <div id="library">
+        <div id="filter-section">
+            <div class="filter">
+                <label for="name-filter" class="label">Filtriraj po nazivu</label>
+                <input id="name-filter" type="text" oninput="filterTable()"/>
+            </div>
+
+            <div class="filter">
+                <label for="genre-filter" class="label">Filtriraj po zanru</label>
+                <select id="genre-filter" onchange="filterTable()"></select>
+            </div>
+
+            <div class="filter">
+                <label for="player-filter" class="label">Filtriraj po broju igraca</label>
+                <select id="player-filter" onchange="filterTable()"></select>
+            </div>
+
+            <div class="filter">
+                <label for="dev-filter" class="label">Filtriraj po developeru</label>
+                <select id="dev-filter" onchange="filterTable()"></select>
+            </div>
+
+            <div class="filter">
+                <label for="score-filter" class="label">Filtriraj po oceni</label>
+                <select id="score-filter" onchange="filterTable()">
+                    <option value="Svi" selected="selected">Svi</option>
+                    <option value=">=1">>= 1.0</option>
+                    <option value=">=2">>= 2.0</option>
+                    <option value=">=3">>= 3.0</option>
+                    <option value=">=4">>= 4.0</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="game-section">
+            <table id="game-table">
+                <tr>
+                    <th>Naziv</th>
+                    <th>Proizvodjac</th>
+                    <th>Ocena</th>
+                    <th>Godina</th>
+                    <th>Broj igraca</th>
+                    <th>Uzrast</th>
+                    <th>Zanr</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/biblioteka.js"></script>
+</body>
+</html>

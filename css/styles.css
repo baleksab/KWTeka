@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Brisemo stajling buttona */
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+/* Leva strana, navbar */
+
+body > #navbar {
+    flex-basis: 20%;
+    border-right: 10px solid crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar .item {
+    color: black;
+    height: 100px;
+    font-size: 48px;
+    align-self: stretch;
+    background-color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#navbar .item:disabled {
+    background-color: crimson;
+    color: white;
+}
+
+#navbar .item:hover {
+    background-color: crimson;
+    color: white;
+}
+
+/* Desna strana, content */
+
+body > #content {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    gap: 20px;
+}
+
+#content img {
+    width: 480px;
+    height: 320px;
+}
+
+#content .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid crimson;
+    color: black;
+    gap: 5px;
+
+}
+
+.text-box > h1 {
+    padding: 5px;
+    background-color: crimson;
+    color: white;
+    align-self: stretch;
+    text-align: center;
+}
+.text-box > p {
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Desna strana, biblioteka */
+
+body > #library {
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#library > #filter-section {
+    flex-basis: 20%;
+    border-right: 10px solid crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: auto;
+}
+
+#filter-section .filter {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid crimson;
+    align-self: stretch;
+    gap: 10px;
+    padding-bottom: 10px;
+    overflow: auto;
+    height: 80px;
+    margin: 0 10px;
+}
+
+#filter-section .label {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+#filter-section input {
+    margin: 0 10px;
+    text-align: center;
+}
+
+#filter-section select {
+    text-align-last: center;
+    margin: 0 10px;
+}
+
+#library > #game-section {
+    flex-basis: 80%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    overflow: auto;
+}
+
+#game-section #game-table {
+    align-self: stretch;
+    border: 1px solid crimson;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#game-table th {
+    background-color: crimson;
+    color: white;
+    font-size: larger;
+}
+
+#game-table td {
+    border: 1px solid crimson;
+}
+
+/* Desna strana, galerija */
+
+body > #gallery {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    overflow: auto;
+    padding: 50px 0;
+}
+
+#gallery > .pic-box {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid crimson;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#gallery > .pic-box > img {
+    width: 200px;
+    height: 250px;
+}
+
+#gallery > .pic-box > h2 {
+    padding-top: 2px;
+    background-color: crimson;
+    color: white;
+    align-self: stretch;
+    text-align: center;
+}
