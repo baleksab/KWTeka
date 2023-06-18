@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div id="navbar">
+        <button class="item" onclick="location.href='index.html';">KWTeka</button>
+        <button class="item" onclick="location.href='biblioteka.html';">Biblioteka</button>
+        <button class="item" onclick="location.href='galerija.html';">Galerija</button>
+        <button disabled="disabled" class="item" onclick="location.href='kontakt.html';">Kontakt</button>
+        <button class="item" onclick="location.href='zabava.html';">Zabava</button>
+    </div>
 
+
+    <div id="content">
+        <div class="text-box">
+            <h1>Zelite da porucite neku igricu?</h1>
+            <p>
+                Ako zelite da porucite neku igricu, slobodno nas mozete kontaktirati.
+                Igrice koje se nalaze u našoj biblioteci su dostupne, a ako ima
+                neka koja se ne nalazi, mozemo je naci i poruciti za vas.
+            </p>
+        </div>
+
+        <form class="form">
+            <label>Mejl</label>
+            <input id="title" type="email" required="required"/>
+            <label>Naslov</label>
+            <input id="title" type="text" required="required"/>
+            <label>Sadrzaj</label>
+            <input id="msg" type="text" style="height: 200px" required="required"/>
+            <button id="input-btn" type="submit">Posalji</button>
+        </form>
+
+        <div class="text-box">
+            <h1>Imate neko pitanje?</h1>
+            <p>
+                Mozete nas slobodno kontaktirati ovde slanjem poruke preko forme.
+                Sve sto trebate da uradite jeste da popunite formular na ovoj
+                i dobicete odgovor u roku od 24h.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/kontakt.js"></script>
 </body>
 </html>

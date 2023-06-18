@@ -64,9 +64,25 @@ function loadXML() {
                     <td>${game.rating}</td>
                     <td>${game.genres.join(", ")}</td>
                 `
-            game.row.addEventListener("click", e => alert(game.name + ":\n" + game.desc));
+
+            game.drow = document.createElement("tr");
+            game.drow.innerHTML = 
+                `
+                    <td colspan="7">${game.desc}</td>
+                `;
+            game.drow.style.background = "crimson";
+            game.drow.style.color = "white";
+            game.drow.style.display = "none";
 
             gamesTable.appendChild(game.row);
+            gamesTable.appendChild(game.drow);
+
+            game.row.addEventListener("click", () => {
+                if (game.drow.style.display == "none")
+                    game.drow.style.display = "table-row";
+                else 
+                    game.drow.style.display = "none";
+            });
 
             playerSet.add(player);
             devSet.add(dev);

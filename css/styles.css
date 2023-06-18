@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Helvetica, sans-serif;
 }
 
 /* Brisemo stajling buttona */
@@ -81,6 +82,8 @@ body > #content {
     border: 1px solid crimson;
     color: black;
     gap: 5px;
+    width: 800px;
+    text-align: center;
 
 }
 
@@ -93,8 +96,52 @@ body > #content {
 }
 .text-box > p {
     padding: 5px;
-    text-align: center;
+    font-size: larger;
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+#content .form {
+    display: flex;
+    border: 1px solid crimson;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    gap: 2px;
+}
+
+.form label {
+    background-color: crimson;
+    color: white;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.form input {
+    background-color: white;
+    height: 36px;
+    align-self: stretch;
+    text-align: center;
+    font-size: large;
+}
+
+.form #input-btn {
+    background-color: crimson;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 /* Desna strana, biblioteka */
@@ -173,6 +220,7 @@ body > #library {
 
 #game-table td {
     border: 1px solid crimson;
+    font-size: larger;
 }
 
 /* Desna strana, galerija */
@@ -183,7 +231,7 @@ body > #gallery {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 25px;
     overflow: auto;
     padding: 50px 0;
 }
@@ -209,4 +257,10 @@ body > #gallery {
     color: white;
     align-self: stretch;
     text-align: center;
+}
+
+#snake-game {
+    width: 400px;
+    height: 400px;
+    border: 1px solid crimson;
 }
