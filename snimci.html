@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KWTeka - Snimci</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <button class="item" onclick="location.href='index.html';">KWTeka</button>
+        <button class="item" onclick="location.href='biblioteka.html';">Biblioteka</button>
+        <button class="item" onclick="location.href='galerija.html';">Galerija</button>
+        <button disabled="disabled" class="item" onclick="location.href='snimci.html';">Snimci</button>
+        <button class="item" onclick="location.href='kontakt.html';">Kontakt</button>
+    </div>
+
+    <div id="content">
+        <iframe id="yt-player"></iframe>
+
+        <div id="yt-controls">
+            <button class="vid-control" onclick="changeVideo(false)"><</button>
+            <div id="title"></div>
+            <button class="vid-control" onclick="changeVideo(true)">></button>
+        </div>
+    </div>
+
+    <script src="js/snimci.js"></script>
+</body>
+</html>
